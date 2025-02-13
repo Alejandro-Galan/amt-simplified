@@ -30,9 +30,6 @@ We consider a music transcription system, trained on either image (Optical Music
 
 [^1]: It is important to clarify that the model we are referring to is actually an Audio-to-Score (A2S) model. At the time of conducting this research, we used the term AMT because the distinction between AMT and A2S did not exist in the literature. However, nowadays, there is a clear distinction between the two. AMT typically focuses on note-level transcription, encoding the acoustic piece in terms of onset, offset, pitch values, and the musical instrument of the estimated notes. In contrast, A2S aims to achieve a score-level codification.
 
-<p align="center">
-  <img src="scheme.png" alt="content" style="border: 1px solid black; width: 800px;">
-</p> 
 
 ## How To Use
 
