@@ -2,9 +2,9 @@
   <a href="https://praig.ua.es/"><img src="https://i.imgur.com/Iu7CvC1.png" alt="PRAIG-logo" width="100"></a>
 </p>
 
-<h1 align="center">Insights into transfer learning between image and audio music transcription</h1>
+<h1 align="center">AMT simplified</h1>
 
-<h4 align="center">Full text available <a href="https://zenodo.org/record/6573248" target="_blank">here</a>.</h4>
+<h4 align="center">Simplification of smc available <a href="https://zenodo.org/record/6573248" target="_blank">here</a>.</h4>
 
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.9.0-orange" alt="Gitter">
@@ -23,6 +23,8 @@
 
 
 ## About
+
+Simplification of the multimodal code [smc](https://github.com/mariaalfaroc/smc-2022/tree/main?tab=readme-ov-file).
 
 We consider a music transcription system, trained on either image (Optical Music Recognition, OMR) or audio (Automatic Music Transcription, AMT)[^1] data, and adapt its performance to the unseen domain during the training phase using different transfer learning schemes.
 
