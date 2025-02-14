@@ -2,9 +2,9 @@
   <a href="https://praig.ua.es/"><img src="https://i.imgur.com/Iu7CvC1.png" alt="PRAIG-logo" width="100"></a>
 </p>
 
-<h1 align="center">AMT simplified</h1>
+<h1 align="center">Insights into transfer learning between image and audio music transcription</h1>
 
-<h4 align="center">Simplification of smc available <a href="https://zenodo.org/record/6573248" target="_blank">here</a>.</h4>
+<h4 align="center">Full text available <a href="https://zenodo.org/record/6573248" target="_blank">here</a>.</h4>
 
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.9.0-orange" alt="Gitter">
@@ -24,12 +24,13 @@
 
 ## About
 
-Simplification of the multimodal code [smc](https://github.com/mariaalfaroc/smc-2022/tree/main?tab=readme-ov-file).
-
-We consider a music transcription system trained on audio (Automatic Music Transcription, AMT)[^1] data.
+We consider a music transcription system, trained on either image (Optical Music Recognition, OMR) or audio (Automatic Music Transcription, AMT)[^1] data, and adapt its performance to the unseen domain during the training phase using different transfer learning schemes.
 
 [^1]: It is important to clarify that the model we are referring to is actually an Audio-to-Score (A2S) model. At the time of conducting this research, we used the term AMT because the distinction between AMT and A2S did not exist in the literature. However, nowadays, there is a clear distinction between the two. AMT typically focuses on note-level transcription, encoding the acoustic piece in terms of onset, offset, pitch values, and the musical instrument of the estimated notes. In contrast, A2S aims to achieve a score-level codification.
 
+<p align="center">
+  <img src="scheme.png" alt="content" style="border: 1px solid black; width: 800px;">
+</p> 
 
 ## How To Use
 
@@ -50,6 +51,10 @@ The specific steps to follow are:
 2) Download a [General MIDI SounFont (sf2)](https://sites.google.com/site/soundfonts4u/#h.p_biJ8J359lC5W). We recommend downloading the [SGM-v2.01 soundfont](https://drive.google.com/file/d/12zSPpFucZXFg-svKeu6dm7-Fe5m20xgJ/view) as this code has been tested using this soundfont. **Place the sf2 file in the [`dataset`](dataset) folder.**
 
 ## Experiments
+
+We consider two scenarios:
+- **Scenario A**. This scenario assesses the performance of the transcription models when transfer learning is both considered and ignored.
+- **Scenario B**. This scenario studies the amount of data required in the target domain for an efficient transfer process that outperforms the base case of ignoring transfer learning.
 
 To replicate our experiments, you will first need to meet certain requirements specified in the [`Dockerfile`](Dockerfile). Alternatively, you can set up a virtual environment if preferred. Once you have prepared your environment (either a Docker container or a virtual environment) and followed the steps in the [dataset](#dataset) section, you are ready to begin. Follow this recipe to replicate our experiments:
 
